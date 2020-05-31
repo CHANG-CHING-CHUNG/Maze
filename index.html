@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1 id="example-H1">輸入說明</h1>
+    <p id="exmaple">
+      起點在左上角，終點在右下角<br/>
+      第一排輸入寬度及高度:<br/>
+      例如: "5 5",中間要隔一格空白。
+    </p>
+    <p>
+      接者換行輸入迷宮<br/>
+      "." 代表路、"#"代表死路
+    </p>
+    <p>
+      範例:<br/>
+      <span class="blue">5 5<br/>
+      ...##<br/>
+      ##.##<br/>
+      ##...<br/>
+      ####.<br/>
+      ####.<br/>
+      </span>
+    </p>
+  </header>
+
+  <div id="maze">
+    <div>
+      <textarea id="inputMaze" type="text">
+        5 5
+        ...##
+        ##.##
+        ##...
+        ####.
+        ####.
+      </textarea>
+      <div id="btn">送出</div>
+    </div>
+
+    <h1>Find a path to the end</h1>
+    
+  </div>
+  
+  <script  src="app.js"></script>
+</body>
+</html>
